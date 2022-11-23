@@ -4,7 +4,7 @@ console.log("Kacper Staszewski || Oskar Bołądź")
 redSrc='red.png'
 blueSrc='blue.png'
 
-onclickAnwser=false
+onclickAnwser=true
 
 class dataGame{
     gameExist=true
@@ -195,7 +195,7 @@ rollTheDice=()=>{
     
 
         game.roll()
-
+        onclickAnwser=false
         game.isTurn=true
         pawnMove(game.rollNumber,game.turn)
         
