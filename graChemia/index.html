@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="deferScript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <div id="container">
+        <div id="board">
+            <div id="t0"><!--<img id="metaImg" src="meta.jpg">--></div><div id="t1" class="tile">1</div><div id="t2" class="tile">2</div><div id="t3" class="tile">3</div><div id="t4" class="tile">4</div><div id="t5" class="tile">5</div><div id="t6" class="tile">6</div>
+            <div id="t23" class="tile">23</div><div id="p1" class="playerTile">Player 1</div><div id="winDisplay"></div><div id="p2" class="playerTile">Player 2</div><div id="t7" class="tile">7</div>
+            <div id="t22" class="tile">22</div><div id="rT" class="rollTile" onclick="rollTheDice()">Roll</div><div id="rN" class="rollNumberTile">0</div><div id="t8" class="tile">8</div>
+            <div id="t21" class="tile">21</div><div id="At" class="Atom">
+                <span id="atomicNumber" >Number</span>
+                <span id="icon">H</span>
+                <span id="mass">Mass</span>
+            </div>                             <div id="o1" class="Anwser" onclick="anwClick(this.innerHTML)"></div><div id="t9" class="tile">9</div>
+            <div id="t20" class="tile">20</div><div id="o2" class="Anwser" onclick="anwClick(this.innerHTML)""></div><div id="t10" class="tile">10</div>
+            <div id="t19" class="tile">19</div><div id="o3" class="Anwser" onclick="anwClick(this.innerHTML)""></div><div id="t11" class="tile">11</div>
+            <div id="t18" class="tile">18</div><div id="t17" class="tile">17</div>
+            <div id="t16" class="tile">16</div><div id="t15" class="tile">15</div>
+            <div id="t14" class="tile">14</div><div id="t13" class="tile">13</div><div id="t12" class="tile">12</div>
+            <!--<div id="P1">Player 1</div><div id="P2">Player 2</div>-->
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

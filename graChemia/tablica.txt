@@ -1,0 +1,9 @@
+var listOfAtoms = [{
+  Name: "Wodór",
+  Symbol: "H",
+  Group: 1,
+  Period: 1,
+  AtomicNumber: 1,
+  Weight:1.008, 
+  Electronegativity: 2,20
+},{cała reszta}];

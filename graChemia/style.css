@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* font-family: 'Space Mono', monospace;*/
+:root{
+    --black:#1A1A1A;
+    --lightBlack:#292929;
+    --lighterBlack:#313131;
+
+    --white:#F9F9F9;
+
+    --blue:#316DCA;
+    --lightBlue:#96D0FF;
+
+    --yellow:#EAC55F;
+
+    --pawnRed:#950F00;
+    --pawnBlue:#002F95;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--black);
+    color:var(--white);
+    font-family: 'Space Mono', monospace;
+}
+#app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+    width:800px;
+    height:800px;
+    border-radius: 20px;
+    background-color: var(--lightBlack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#board{
+    width:780px;
+    height:780px;
+    background-color: initial;
+    /*border-radius: 10px;*/
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-gap:5px;
+}
+
+.tile{
+    background-color: var(--lighterBlack);
+    display:flex;
+    flex-direction: row;
+    padding: 2px;
+    border-radius: 1vh;
+}
+#t0{
+    border-radius:1vh;
+}
+#winDisplay{
+    color:var(--yellow);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playerTile{
+    background-color: initial;
+    border-radius: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration-color: var(--yellow);
+}
+#p1{
+    grid-column:2/4;
+    border: 3px solid var(--pawnRed);
+    
+
+}
+#p2{
+    grid-column:5/7;
+    border: 3px solid var(--pawnBlue);
+}
+.rollTile{
+    grid-column:2/5;
+    background-color:initial;
+    border-radius: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--white);
+    font-size: 50px;
+}
+.rollNumberTile{
+    grid-column:5/7;
+    background-color:initial;
+    border-radius: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--white);
+    font-size: 50px;
+}
+.Atom{
+    background-color: var(--lightBlue);
+    grid-column:2/5;
+    grid-row:4/7;
+    border: 3px double var(--white);
+    padding: 15px;
+    display:flex;
+    flex-direction:column;
+}
+/*<span id="atomicNumber">8</span>
+<span id="icon">O</span>
+<span id="mass">15.999</span>*/
+#atomicNumber{
+    text-align: right;
+    font-size: 30px;
+    margin-right:10px;
+}
+#icon{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    line-height: 200px;
+    text-align: center;
+    font-size: 200px;
+    margin-bottom:10px;
+}
+#mass{
+    margin-top: 0px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.Anwser{
+    grid-column:5/7;
+}
+.pawn{
+    /*zdjęcie pionka*/
+
+    width:46px;
+    height:46px;
+    margin-top: 30px;
+}
+/*#metaImg{
+    width:100%;
+    aspect-ratio: 1;
+}*/
+#t0{/*
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background-image: url("meta.jpg") ;
+    background-size: cover;
+}
+.Anwser{
+    border:3px solid var(--white);
+    border-radius: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
